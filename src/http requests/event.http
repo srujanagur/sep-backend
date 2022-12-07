@@ -1,0 +1,36 @@
+GET http://localhost:5000/api/v1/newEvents
+###
+
+POST http://localhost:5000/api/v1/newEvent
+Content-Type: application/json
+
+{
+"clientName":"Goerge",
+"eventType":"Birthday",
+"from":"2022-12-15T18:21:33.193Z",
+"to":"2022-12-16T18:21:33.193Z",
+"expectedNumOfAttendees":20,
+"preferences":{
+    "decorations":true,
+    "parties":true,
+    "photosOrFilming":false,
+    "food":true,
+    "drinks":false
+},
+"expectedBudget":2000
+}
+###
+PUT   http://localhost:5000/api/v1/newEvent/634b045ccff6693110902ecd/budget
+Content-Type: application/json
+
+{
+    "budgetReview":"seems ok"
+}
+
+###
+PUT   http://localhost:5000/api/v1/newEvent/634b045ccff6693110902ecd/budget
+Content-Type: application/json
+
+{
+    "status":"Initial Approval"
+}

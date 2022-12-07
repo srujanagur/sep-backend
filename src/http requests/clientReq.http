@@ -1,0 +1,24 @@
+GET http://localhost:5000/api/v1/newClientRequests
+###
+
+POST http://localhost:5000/api/v1/newClientRequest
+Content-Type: application/json
+
+{
+"recordNumber":5,
+"clientName":"Diana",
+"eventType":"Birthday",
+"description":"50th birthday",
+"expectedNumOfAttendees":20,
+"plannedBudget":5000,
+"from":"2022-12-15T18:21:33.193Z",
+"to":"2022-12-16T18:21:33.193Z",
+"preferences":{
+    "decorations":"Flower",
+    "parties":"NA",
+    "PhotosOrFilming":"Candid",
+    "food":"Soft food",
+    "drinks":"NA",
+    "computerRelatedIssues":"NA"
+}
+}

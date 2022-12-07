@@ -1,0 +1,13 @@
+GET http://localhost:5000/api/v1/recReqs
+###
+
+POST http://localhost:5000/api/v1/newRecReq
+Content-Type: application/json
+
+{
+"contractType":"Full time",
+"RequestingDepartment":"Services",
+"yearsOfExperience":5,
+"jobTitle":"Head chef",
+"jobDescription":"Manage a team of 6 checks. Specialized in Indian cuisine"
+}

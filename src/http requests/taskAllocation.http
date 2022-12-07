@@ -1,0 +1,38 @@
+GET http://localhost:5000/api/v1/taskAllocations
+###
+
+POST http://localhost:5000/api/v1/newTaskAllocation
+Content-Type: application/json
+
+{
+"general":{
+    "projectReference":"b2345",
+    "description":"Some description",
+    "assignTo":"xyz"
+},
+"decorations":{
+    "projectReference":"b2345",
+    "description":"Some description",
+    "assignTo":"abc"
+},
+"photography":{
+    "projectReference":"b2345",
+    "description":"Some description",
+    "assignTo":"def"
+},
+"music":{
+    "projectReference":"b2345",
+    "description":"Some description",
+    "assignTo":"ghi"
+},
+"graphicDesign":{
+    "projectReference":"b2345",
+    "description":"Some description",
+    "assignTo":"jkl"
+},
+"computerRelated":{
+    "projectReference":"b2345",
+    "description":"Some description",
+    "assignTo":"mno"
+}
+}
