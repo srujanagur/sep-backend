@@ -1,12 +1,12 @@
-GET http://localhost:5000/api/v1/newClientRequests
+GET http://localhost:5004/api/v1/newClientRequests
 ###
 
-POST http://localhost:5000/api/v1/newClientRequest
+POST http://localhost:5004/api/v1/newClientRequest
 Content-Type: application/json
 
 {
-"recordNumber":5,
-"clientName":"Diana",
+"recordNumber":6,
+"clientName":"Diana2",
 "eventType":"Birthday",
 "description":"50th birthday",
 "expectedNumOfAttendees":20,
